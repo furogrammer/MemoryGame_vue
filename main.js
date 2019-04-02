@@ -1,6 +1,5 @@
 
 var total = 10;    //カードの枚数
-//var array_cards = [];    //カードに表示する数値を格納する配列
 
 var app = new Vue({
     el: "#playarea",
