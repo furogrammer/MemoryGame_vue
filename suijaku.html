@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<title>神経衰弱</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+
+<body>
+    <ul id="playarea">
+        <li v-for="(card, index) in cards"
+            v-on:click="isClick(index)"
+            v-bind:class="{red: list_success[index] === 1}"
+        >
+            <span v-show="one === index || two === index">{{card}}</span>
+        </li>        
+    </ul>
+<script src="main.js"></script>
+
+</body>
+
+</html>
